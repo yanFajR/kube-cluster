@@ -1,0 +1,4 @@
+kubectl config set-cluster my-cluster --server=https://10.0.0.4:6443 --certificate-authority=/home/shandy/kube-cluster/kubernetes/ca.crt
+kubectl config set-credentials  cluster-admin --token=oksy6k.b5foi0s6m96l10s5
+kubectl config set-context my-context --cluster=my-cluster --user=my-user
+kubectl config use-context my-context
